@@ -1,0 +1,54 @@
+body {
+    background-color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-family: "Libertinus Keyboard", system-ui;*/
+}
+
+main {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+header {
+    background-color: linen;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+#tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#pizza-guy {
+    float: right;
+}
+
+#contact-button {
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+fieldset {
+    border: 1px solid darkgreen;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+legend {
+    color: darkgreen;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    width: 100%;
+}
