@@ -68,6 +68,10 @@ input[type="text"], input[type="email"], textarea, select {
     font-size: 1rem;
 }
 
+form {
+    background-color: lightgray;
+}
+
 legend {
     color:darkgreen;
     font-variant: small-caps;
@@ -85,6 +89,11 @@ fieldset {
 label {
     display: block;
     padding-bottom: .5rem;
+}
+
+.error {
+    color: red;
+    display: none;
 }
 
 /* Mobile styles */
