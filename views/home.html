@@ -32,9 +32,9 @@
 				<p id="tagline">We have pizzas</p>
 				<hr />
 				<p>Pizza will be good, no hazardous materials, say hi to Ted</p>
-				<a id="contact-button" href="#" role="button">Contact us</a>
+				<a id="contact-button" href="/contact-us" role="button">Contact us</a>
 			</header>
-			<form id="pizza-form" action="#" method="get">
+			<form id="pizza-form" action="submit-order" method="post">
 				<!-- Contact Info -->
 				<fieldset>
 					<legend>Contact Info</legend>
@@ -69,13 +69,21 @@
 				</fieldset>
 				<fieldset>
 					<legend>Select Toppings</legend>
-					<label for="pepperoni">
+					<label for="red-sauce">
 						<input
 							type="checkbox"
-							id="pepperoni"
+							id="red-sauce"
 							name="toppings[]"
-							value="pepperoni"
-						/>Pepperoni
+							value="red-sauce"
+						/>Red Sauce
+					</label>
+					<label for="white-sauce">
+						<input
+							type="checkbox"
+							id="white-sauce"
+							name="toppings[]"
+							value="white-sauce"
+						/>White Sauce
 					</label>
 					<label for="cheese">
 						<input
@@ -85,6 +93,54 @@
 							value="cheese"
 						/>Cheese
 					</label>
+					<label for="pepperoni">
+						<input
+							type="checkbox"
+							id="pepperoni"
+							name="toppings[]"
+							value="pepperoni"
+						/>Pepperoni
+					</label>
+					<label for="sausage">
+						<input
+							type="checkbox"
+							id="sausage"
+							name="toppings[]"
+							value="sausage"
+						/>Sausage
+					</label>
+					<label for="bacon">
+						<input
+							type="checkbox"
+							id="bacon"
+							name="toppings[]"
+							value="bacon"
+						/>Bacon
+					</label>
+					<label for="olives">
+						<input
+							type="checkbox"
+							id="olives"
+							name="toppings[]"
+							value="olives"
+						/>Olives
+					</label>
+					<label for="onions">
+						<input
+							type="checkbox"
+							id="onions"
+							name="toppings[]"
+							value="onions"
+						/>Onions
+					</label>
+					<label for="jalapenos">
+						<input
+							type="checkbox"
+							id="jalapenos"
+							name="toppings[]"
+							value="jalapenos"
+						/>Jalapenos
+					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Select Pizza Size</legend>
@@ -93,6 +149,7 @@
 						<option value="small">Small</option>
 						<option value="medium">Medium</option>
 						<option value="large">Large</option>
+						<option value="xlarge">X-Large</option>
 					</select>
 				</fieldset>
 				<!-- Add an Order Button -->
