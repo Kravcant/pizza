@@ -34,7 +34,13 @@
 				<p>Pizza will be good, no hazardous materials, say hi to Ted</p>
 				<a id="contact-button" href="#" role="button">Contact us</a>
 			</header>
-			<h1>Thank you for money</h1>
+			<h1>Thank you for money, <%= order.fname %></h1>
+			<h2>Order summary</h2>
+			<p>Name: <%= order.fname %> <%= order.lname %></p>
+			<p>Email: <%= order.email %></p>
+			<p>Toppings: <%= order.toppings %></p>
+			<p>Size: <%= order.size %></p>
+			<p>Time: <%= order.timestamp %></p>
 		</main>
 	</body>
 </html>
