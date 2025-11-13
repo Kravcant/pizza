@@ -34,14 +34,14 @@ app.get('/contact-us', (req, res) => {
 // Define a "confirm" route
 app.get('/confirm', (req, res) => {
     // res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
-    res.render('confirmation', { order});
+    res.render('confirmation', { order });
 });
 
 // Define a "admin" route
 app.get('/admin', (req, res) => {
     // res.send(orders);
     // res.sendFile(`${import.meta.dirname}/views/admin.html`);
-    res.render('admin');
+    res.render('admin', { orders });
 });
 
 // Define a "submit-route" route
@@ -60,7 +60,7 @@ app.post('/submit-order', (req, res) => {
     console.log(orders);
 
     // res.sendFile(`${import.meta.dirname}/views/confirmation.html`);
-    res.render('confirmation', { order});
+    res.render('confirmation', { order });
 });
 
 // Start the server and listen on the specific port

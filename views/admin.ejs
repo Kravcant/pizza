@@ -8,8 +8,11 @@
 		<link rel="icon" href="images/pizza_icon.jpg" />
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="/styles/pizza-styles.css" />
+		<link rel="stylesheet" href="//cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css">
 		<!-- JavaScript -->
 		<script src="js/pizza.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="//cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
 		<!-- Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +38,31 @@
 				<a id="contact-button" href="/contact-us" role="button">Contact us</a>
 			</header>
 			<h1>Admin</h1>
+			<table id="order-table" class="display">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Toppings</th>
+						<th>Size</th>
+						<th>Date/Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% orders.forEach(order => { %>
+						<tr>
+							<td><%= order.fname %> <%= order.lname %></td>
+							<td><%= order.email %></td>
+							<td><%= order.toppings %></td>
+							<td><%= order.size %></td>
+							<td><%= order.timestamp %></td>
+						</tr>
+					<% }); %>
+				</tbody>
+			</table>
 		</main>
+		<script defer>
+			let table = new DataTable('#order-table');
+		</script>
 	</body>
 </html>
